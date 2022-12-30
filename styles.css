@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    --floaredWhite: hsl(32, 100%, 97%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--lightGrayishBlue);
+}   
+
+.card {
+    min-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 8px;
+    background-color: var(--floaredWhite);
+}
+
+.content {
+    display: flex;
+}
+
+.banner {
+    height: 100%;
+}
+
+.banner img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.rightContainer {
+    margin: 20px;
+    padding: 10px;
+}
+
+.title {
+    padding: 10px;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.description {
+    padding: 10px;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.profile img {
+    border-radius: 30px;
+}
+
+.bio {
+    position: relative;
+    left: 15px;
+}
+
+.bio p {
+    color: var(--grayishBlue);
+}
+
+button {
+    background-color: var(--lightGrayishBlue);
+    color: var(--floaredWhite);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shareBtn {
+    position: relative;
+    left: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.showTooltip {
+    background-color: var(--veryDarkGrayishBlue);
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.tooltipContainer {
+    display: none;
+    position: absolute;
+    bottom: 75%;
+    right: 0%;
+}
+
+.text {
+    color: var(--lightGrayishBlue);
+}
+
+.socialMedia {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+/*mobile version */
+
+@media screen and (max-width: 376px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .card {
+        min-width: 350px;
+        width: 50%;
+        height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .rightContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title,.description{
+        padding: 20px;
+    }
+
+    .info {
+        padding-bottom: 20px;
+    }
+
+    .tooltipContainer {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .showTooltip {
+        justify-content: space-around;
+        gap: 0;
+        padding: 20px;
+    }
+
+    .shareBtn {
+        left: 45%;
+    }
+
+    .title h1 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .bio h3 {
+        font-size: 16px;
+    }
+
+    .bio p {
+        font-size: 12px;
+    }
+
+    .description{
+        padding: 10px 20px;
+    }
+
+    .title {
+        padding: 15px 20px;
+    }
+
+    .info {
+        padding-left: 25px;
+    }
+
+    .shareBtn {
+        left: 25%;
+        padding: 10px;
+    }
+    
+
+}
